@@ -13,10 +13,20 @@
   <h2>Two Way Binding</h2>
   <input type="text" [(ngModel)]="defaultVal"/>
 
-  <h1>Data Binding</h1>
-  <input type="text"/>
-  <span>typedText</span>
-  <input type="button" value="Check form" (click)="onClick()"/>
+  <h1>Data Binding Exercise</h1>
+  <div>
+    <input type="text" [(ngModel)] = "formValue" />
+  </div>
+  <br>
+  <div>
+    {{formValue}}
+  </div>
+
+  <br>
+  <div>
+    <button [disabled] = 'isBtnDisabled' (click)="checkForm()">Check Form</button> 
+  </div>  
+ 
 </div>
 
 
