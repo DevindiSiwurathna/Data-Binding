@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Data-Binding';
+  firstName = "Devindi";
+  imagepath="assets/Cambio-Logo.jpg";
+  defaultVal = "Surrender"
+
+  passValueToComponent(e: Event) {
+    const target = e.target as HTMLInputElement;
+    console.log(target.value);
+  }
+
+  changeValue(e:Event){
+    const target = e.target as HTMLInputElement;
+    console.log(target.value);
+  }
+  
 }
